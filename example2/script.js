@@ -4,6 +4,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { Rhino3dmLoader } from 'three/addons/loaders/3DMLoader.js'
 
 // declare variables to store scene, camera, and renderer
+// save rhino file in the same folder and replace the name below (line 9)
 let scene, camera, renderer
 const model = 'Rhino_Logo.3dm'
 

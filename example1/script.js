@@ -6,8 +6,9 @@ import * as THREE from 'three'
 
 // create a scene and a camera
 const scene = new THREE.Scene()
+scene.background = new THREE.Color( 0, 0, 1 );
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 )
-camera.position.z = 30
+camera.position.z = 50
 
 // create the renderer and add it to the html
 const renderer = new THREE.WebGLRenderer()

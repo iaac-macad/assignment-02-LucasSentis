@@ -43,6 +43,7 @@ function init () {
     let material, cubeMap
 
     // load a pbr material
+    
     const tl = new THREE.TextureLoader()
     tl.setPath('materials/PBR/streaked-metal1/')
     material = new THREE.MeshPhysicalMaterial()
@@ -54,6 +55,7 @@ function init () {
     material.roughness = 0.0
 
     // or create a material
+
     // material = new THREE.MeshStandardMaterial( {
     //     color: 0xffffff,
     //     metalness: 0.0,
@@ -61,12 +63,14 @@ function init () {
     // } )
 
     // load hdr cube map
+
     // cubeMap = new HDRCubeTextureLoader()
     //     .setPath( './textures/cube/pisaHDR/' )
     //     .setDataType( THREE.HalfFloatType )
     //     .load( [ 'px.hdr', 'nx.hdr', 'py.hdr', 'ny.hdr', 'pz.hdr', 'nz.hdr' ] )
     
     // or, load cube map
+
     cubeMap = new THREE.CubeTextureLoader()
         .setPath('textures/cube/Bridge2/')
         .load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg' ] )
